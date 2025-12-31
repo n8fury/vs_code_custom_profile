@@ -185,3 +185,80 @@
 .monaco-resizable-hover {
   border: none !important;
 }
+
+/* Line numbers styling */
+.line-numbers {
+  color: #bc9abc !important;
+  opacity: 0.5 !important;
+}
+
+/* Active line highlight */
+.monaco-editor .view-overlays .current-line {
+  border: none !important;
+  background: rgba(188, 154, 188, 0.1) !important;
+}
+
+/* Cursor styling */
+.monaco-editor .cursor {
+  background: #bc9abc !important;
+  width: 2px !important;
+}
+
+/* Minimap styling */
+.minimap {
+  opacity: 0.6 !important;
+}
+
+.minimap:hover {
+  opacity: 1 !important;
+}
+
+/* Bracket pair colorization */
+.bracket-highlighting-0 {
+  color: #ffd700 !important;
+}
+.bracket-highlighting-1 {
+  color: #da70d6 !important;
+}
+.bracket-highlighting-2 {
+  color: #87ceeb !important;
+}
+/* Tab bar styling */
+.tabs-container {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(188, 154, 188, 0.2) !important;
+}
+
+/* Active tab */
+.tab.active {
+  background: rgba(188, 154, 188, 0.15) !important;
+  border-bottom: 2px solid #bc9abc !important;
+}
+
+/* Tab close button */
+.tab .codicon-close {
+  opacity: 0 !important;
+  transition: opacity 0.2s !important;
+}
+
+.tab:hover .codicon-close {
+  opacity: 1 !important;
+}
+
+/* Tab hover effect */
+.tab:hover {
+  background: rgba(188, 154, 188, 0.1) !important;
+}
+/* Context menu styling */
+.monaco-menu .monaco-action-bar {
+  padding: 4px !important;
+}
+
+.monaco-menu .monaco-action-bar .action-item {
+  border-radius: 10px !important;
+  margin: 2px 0 !important;
+}
+
+.monaco-menu .monaco-action-bar .action-item:hover {
+  background: rgba(188, 154, 188, 0.2) !important;
+}
