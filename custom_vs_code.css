@@ -1,0 +1,187 @@
+/* Apply font to text only */
+.monaco-editor,
+.monaco-workbench,
+.monaco-workbench *:not(.codicon):not(.codicon *) {
+  font-family: 'Jetbrains Mono' !important;
+}
+
+/* Force VS Code icons to stay intact */
+.codicon,
+.codicon * {
+  font-family: 'codicon' !important;
+}
+
+/* Explorer ONLY (no notifications) */
+.monaco-workbench .explorer-viewlet .monaco-list-row,
+.monaco-workbench .explorer-viewlet .tree-view,
+.monaco-workbench .explorer-viewlet .pane-header {
+  font-weight: 700 !important;
+}
+
+/* Notifications back to normal */
+.monaco-workbench .notifications-center,
+.monaco-workbench .notification-toast,
+.monaco-workbench .notification-list-row,
+.monaco-workbench .notifications-center * {
+  font-weight: 400 !important;
+}
+
+/* Command Palette
+.quick-input-widget {
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35) !important;
+  padding: 10px 10px 18px 10px !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  backdrop-filter: blur(3px) !important;
+  border-radius: 20px !important;
+} */
+
+/* Command Palette */
+.quick-input-widget {
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35) !important;
+  padding: 10px 10px 18px 10px !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  backdrop-filter: blur(3px) !important;
+  border-radius: 20px !important;
+}
+
+/* Command Palette Minimum Height */
+.quick-input-list,
+.quick-input-list .list_id_6 {
+  min-height: 400px !important;
+}
+
+/* Remove background for lists inside Command Palette */
+.monaco-list-rows {
+  background: transparent !important;
+}
+
+/* Command Palette Text Input */
+.quick-input-filter .monaco-inputbox {
+  border-radius: 12px !important;
+  padding: 16px !important;
+  border: none !important;
+  font-family: 'Geist Mono' !important;
+  font-size: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+/* Blur effect backdrop (optional - currently commented in original) */
+#command-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(8px);
+}
+
+/* Actions after command palette text input */
+.quick-input-inline-action-bar .actions-container .action-item {
+  margin-bottom: 16px !important;
+}
+
+.quick-input-header {
+  align-items: center;
+}
+
+/* Command Palette Input Placeholder */
+.monaco-inputbox input::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Explorer Title ONLY - Bigger Font */
+.monaco-workbench .part.sidebar.left .composite.title h2 {
+  font-weight: bold !important;
+  font-size: 16px !important;
+  text-transform: uppercase;
+  color: #bc9abc !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* Materialistic Round Edge Scrollbar for Editor */
+/* Scrollbar track */
+.monaco-scrollable-element > .scrollbar > .slider {
+  background: rgba(188, 154, 188, 0.4) !important;
+  border-radius: 10px !important;
+  width: 8px !important;
+}
+
+/* Scrollbar on hover */
+.monaco-scrollable-element > .scrollbar > .slider:hover {
+  background: rgba(188, 154, 188, 0.6) !important;
+}
+
+/* Scrollbar when active/dragging */
+.monaco-scrollable-element > .scrollbar > .slider.active {
+  background: #bc9abc !important;
+}
+
+/* Horizontal scrollbar */
+.monaco-scrollable-element > .scrollbar.horizontal > .slider {
+  height: 8px !important;
+  border-radius: 10px !important;
+}
+
+/* Editor scrollbar specific styling */
+.monaco-editor .scrollbar .slider {
+  background: rgba(188, 154, 188, 0.3) !important;
+  border-radius: 10px !important;
+}
+
+.monaco-editor .scrollbar .slider:hover {
+  background: rgba(188, 154, 188, 0.5) !important;
+}
+
+.monaco-editor .scrollbar .slider.active {
+  background: #bc9abc !important;
+}
+
+/* File Explorer Item Labels - Font Style */
+.monaco-tree .monaco-tree-row .label-name,
+.monaco-list .monaco-list-row .monaco-icon-label .label-name {
+  font-family: 'Geist Mono', monospace !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #fff !important;
+}
+
+.explorer-item-edited {
+  font-family: 'Jetbrains Mono', monospace !important;
+  font-size: 14px !important;
+}
+
+/* Explorer viewlet - keep bold for headers */
+.monaco-workbench .explorer-viewlet .pane-header {
+  font-weight: 700 !important;
+}
+
+/* Status Bar - Lighter Font Weight */
+.monaco-workbench .part.statusbar {
+  font-weight: 300 !important;
+}
+
+/* Status Bar Items */
+.monaco-workbench .part.statusbar .statusbar-item,
+.monaco-workbench .part.statusbar .statusbar-item span {
+  font-weight: 300 !important;
+}
+
+/* Tooltip box style */
+.monaco-editor-hover,
+.monaco-hover {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  backdrop-filter: blur(3px) !important;
+  border-radius: 16px !important;
+  border: none !important;
+  outline: 0px !important;
+}
+
+.monaco-resizable-hover {
+  border: none !important;
+}
