@@ -149,3 +149,6 @@ If something isn't working:
 ---
 
 **Enjoy your customized VS Code! 🎉**
+
+
+ref: https://www.youtube.com/watch?v=9_I0bySQoCs
