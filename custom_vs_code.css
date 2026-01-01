@@ -249,6 +249,11 @@
   opacity: 1 !important;
 }
 
+span.codicon.codicon-copilot::before,
+span.codicon.codicon-copilot-in-progress::before {
+  font-family: 'codicon' !important;
+}
+
 /* ====================================
    NOTIFICATIONS
    ==================================== */
