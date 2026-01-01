@@ -11,6 +11,17 @@
   font-family: 'codicon' !important;
 }
 
+/* Extensions button text */
+.statusbar-item[id*='workbench.view.extensions'] span,
+.statusbar-item[id*='extensions'] span,
+.actions-container .action-label {
+  font-family: 'Jetbrains Mono' !important;
+}
+
+/* Status bar action labels */
+.monaco-workbench .part.statusbar .statusbar-item .action-label {
+  font-family: 'Jetbrains Mono' !important;
+}
 /* Explorer ONLY (no notifications) */
 .monaco-workbench .explorer-viewlet .monaco-list-row,
 .monaco-workbench .explorer-viewlet .tree-view,
