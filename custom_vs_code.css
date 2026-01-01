@@ -1,7 +1,15 @@
+/* ====================================
+   GLOBAL FONT
+   ==================================== */
 * {
   font-family: 'JetBrainsMono NFM' !important;
 }
-/* FIX 1: Suggestion/Autocomplete widget icons */
+
+/* ====================================
+   CODICON FIXES
+   ==================================== */
+
+/* Suggestion/Autocomplete widget icons */
 .monaco-editor .suggest-widget .codicon,
 .monaco-editor .suggest-widget .monaco-icon-label::before,
 .monaco-editor .parameter-hints-widget .codicon,
@@ -20,7 +28,7 @@
   font-family: 'codicon' !important;
 }
 
-/* FIX 2: Title bar icons (top bar) */
+/* Title bar icons (top bar) */
 .titlebar .codicon,
 .titlebar-left .codicon,
 .titlebar-right .codicon,
@@ -53,10 +61,16 @@
 .interactive-list .codicon {
   font-family: 'codicon' !important;
 }
+
 /* Copilot Chat sparkle icon fix */
 .action-label.codicon.codicon-chat-sparkle::before {
   font-family: 'codicon' !important;
 }
+
+/* ====================================
+   EXPLORER
+   ==================================== */
+
 /* Explorer ONLY (no notifications) */
 .monaco-workbench .explorer-viewlet .monaco-list-row,
 .monaco-workbench .explorer-viewlet .tree-view,
@@ -64,13 +78,37 @@
   font-weight: 700 !important;
 }
 
-/* Notifications back to normal */
-.monaco-workbench .notifications-center,
-.monaco-workbench .notification-toast,
-.monaco-workbench .notification-list-row,
-.monaco-workbench .notifications-center * {
-  font-weight: 400 !important;
+/* Explorer Title ONLY - Bigger Font */
+.monaco-workbench .part.sidebar.left .composite.title h2 {
+  font-weight: bold !important;
+  font-size: 16px !important;
+  text-transform: uppercase;
+  color: #bc9abc !important;
+  letter-spacing: 0.5px !important;
 }
+
+/* File Explorer Item Labels - Font Style */
+.monaco-tree .monaco-tree-row .label-name,
+.monaco-list .monaco-list-row .monaco-icon-label .label-name {
+  font-family: 'Geist Mono', monospace !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #fff !important;
+}
+
+.explorer-item-edited {
+  font-family: 'Jetbrains Mono', monospace !important;
+  font-size: 14px !important;
+}
+
+/* Explorer viewlet - keep bold for headers */
+.monaco-workbench .explorer-viewlet .pane-header {
+  font-weight: 700 !important;
+}
+
+/* ====================================
+   COMMAND PALETTE
+   ==================================== */
 
 /* Command Palette */
 .quick-input-widget {
@@ -129,35 +167,30 @@
   color: rgba(255, 255, 255, 0.3) !important;
 }
 
-/* Explorer Title ONLY - Bigger Font */
-.monaco-workbench .part.sidebar.left .composite.title h2 {
-  font-weight: bold !important;
-  font-size: 16px !important;
-  text-transform: uppercase;
-  color: #bc9abc !important;
-  letter-spacing: 0.5px !important;
-}
+/* ====================================
+   SCROLLBAR
+   ==================================== */
 
 /* Materialistic Round Edge Scrollbar for Editor */
 /* Scrollbar track */
-.monaco-scrollable-element > .scrollbar > .slider {
+.monaco-scrollable-element>.scrollbar>.slider {
   background: rgba(188, 154, 188, 0.4) !important;
   border-radius: 10px !important;
   width: 8px !important;
 }
 
 /* Scrollbar on hover */
-.monaco-scrollable-element > .scrollbar > .slider:hover {
+.monaco-scrollable-element>.scrollbar>.slider:hover {
   background: rgba(188, 154, 188, 0.6) !important;
 }
 
 /* Scrollbar when active/dragging */
-.monaco-scrollable-element > .scrollbar > .slider.active {
+.monaco-scrollable-element>.scrollbar>.slider.active {
   background: #bc9abc !important;
 }
 
 /* Horizontal scrollbar */
-.monaco-scrollable-element > .scrollbar.horizontal > .slider {
+.monaco-scrollable-element>.scrollbar.horizontal>.slider {
   height: 8px !important;
   border-radius: 10px !important;
 }
@@ -176,24 +209,9 @@
   background: #bc9abc !important;
 }
 
-/* File Explorer Item Labels - Font Style */
-.monaco-tree .monaco-tree-row .label-name,
-.monaco-list .monaco-list-row .monaco-icon-label .label-name {
-  font-family: 'Geist Mono', monospace !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  color: #fff !important;
-}
-
-.explorer-item-edited {
-  font-family: 'Jetbrains Mono', monospace !important;
-  font-size: 14px !important;
-}
-
-/* Explorer viewlet - keep bold for headers */
-.monaco-workbench .explorer-viewlet .pane-header {
-  font-weight: 700 !important;
-}
+/* ====================================
+   STATUS BAR
+   ==================================== */
 
 /* Status Bar - Lighter Font Weight */
 .monaco-workbench .part.statusbar {
@@ -205,6 +223,47 @@
 .monaco-workbench .part.statusbar .statusbar-item span {
   font-weight: 300 !important;
 }
+
+/* Status Bar - VS Code Blue */
+.monaco-workbench .part.statusbar {
+  background: #007acc !important;
+  color: #ffffff !important;
+  font-weight: 300 !important;
+}
+
+/* Status Bar Items */
+.monaco-workbench .part.statusbar .statusbar-item,
+.monaco-workbench .part.statusbar .statusbar-item span {
+  color: #ffffff !important;
+  font-weight: 300 !important;
+}
+
+/* Status Bar Hover */
+.monaco-workbench .part.statusbar .statusbar-item:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Colorful Status Bar Icons */
+.monaco-workbench .part.statusbar .statusbar-item .codicon {
+  color: inherit !important;
+  opacity: 1 !important;
+}
+
+/* ====================================
+   NOTIFICATIONS
+   ==================================== */
+
+/* Notifications back to normal */
+.monaco-workbench .notifications-center,
+.monaco-workbench .notification-toast,
+.monaco-workbench .notification-list-row,
+.monaco-workbench .notifications-center * {
+  font-weight: 400 !important;
+}
+
+/* ====================================
+   TOOLTIPS & HOVERS
+   ==================================== */
 
 /* Tooltip box style */
 .monaco-editor-hover,
@@ -220,6 +279,10 @@
 .monaco-resizable-hover {
   border: none !important;
 }
+
+/* ====================================
+   EDITOR
+   ==================================== */
 
 /* Line numbers styling */
 .line-numbers {
@@ -252,12 +315,19 @@
 .bracket-highlighting-0 {
   color: #ffd700 !important;
 }
+
 .bracket-highlighting-1 {
   color: #da70d6 !important;
 }
+
 .bracket-highlighting-2 {
   color: #87ceeb !important;
 }
+
+/* ====================================
+   TABS
+   ==================================== */
+
 /* Tab bar styling */
 .tabs-container {
   background: transparent !important;
@@ -284,6 +354,11 @@
 .tab:hover {
   background: rgba(188, 154, 188, 0.1) !important;
 }
+
+/* ====================================
+   CONTEXT MENU
+   ==================================== */
+
 /* Context menu styling */
 .monaco-menu .monaco-action-bar {
   padding: 4px !important;
@@ -296,29 +371,4 @@
 
 .monaco-menu .monaco-action-bar .action-item:hover {
   background: rgba(188, 154, 188, 0.2) !important;
-}
-
-/* Status Bar - VS Code Blue */
-.monaco-workbench .part.statusbar {
-  background: #007acc !important;
-  color: #ffffff !important;
-  font-weight: 300 !important;
-}
-
-/* Status Bar Items */
-.monaco-workbench .part.statusbar .statusbar-item,
-.monaco-workbench .part.statusbar .statusbar-item span {
-  color: #ffffff !important;
-  font-weight: 300 !important;
-}
-
-/* Status Bar Hover */
-.monaco-workbench .part.statusbar .statusbar-item:hover {
-  background: rgba(255, 255, 255, 0.1) !important;
-}
-
-/* Colorful Status Bar Icons */
-.monaco-workbench .part.statusbar .statusbar-item .codicon {
-  color: inherit !important;
-  opacity: 1 !important;
 }
