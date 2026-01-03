@@ -6,6 +6,26 @@
 }
 
 /* ====================================
+   BACKGROUND IMAGE
+   ==================================== */
+
+/* VS Code background image */
+.monaco-workbench {
+  background-image: url('file:///C:/vs_code_bg.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* Make editor background transparent to see the image */
+.monaco-editor,
+.monaco-editor .margin,
+.monaco-editor-background {
+  background: transparent !important;
+}
+
+/* ====================================
    CODICON FIXES
    ==================================== */
 
@@ -226,7 +246,7 @@
 
 /* Status Bar - VS Code Blue */
 .monaco-workbench .part.statusbar {
-  background: #007acc !important;
+  /* background: #007acc !important; */
   color: #ffffff !important;
   font-weight: 300 !important;
 }
@@ -237,6 +257,7 @@
   color: #ffffff !important;
   font-weight: 300 !important;
 }
+
 
 /* Status Bar Hover */
 .monaco-workbench .part.statusbar .statusbar-item:hover {
@@ -251,6 +272,10 @@
 
 span.codicon.codicon-copilot::before,
 span.codicon.codicon-copilot-in-progress::before {
+  font-family: 'codicon' !important;
+}
+
+span.codicon.codicon-git-branch-staged-changes::before {
   font-family: 'codicon' !important;
 }
 
